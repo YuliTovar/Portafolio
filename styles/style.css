@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Courgette&family=Krona+One&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Protest+Riot&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Courgette&family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Protest+Riot&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+:root{/* variables */
+    --color-primario: #000000;
+    --color-secundario: #f6f6f6;
+    --color-terceario: #22d4fd;
+
+    --fuente-monserrat: "Montserrat", sans-serif;
+    --fuente-monserrat: "Krona One", sans-serif; 
+}
+
+
+
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    box-sizing: border-box;
+    background-color: var(--color-primario);
+    color:var(--color-secundario);
+    /* height:100vh ; */
+}
+
+.header{
+    padding: 2% 0% 0% 10%;
+}
+
+.header_menu{
+    display: flex ;
+    gap: 80px;
+}
+
+.header_menu_link{
+    font-family: var(--fuente-monserrat);
+    /* font-size: 24px; */
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--color-terceario);
+    text-decoration: none;
+}
+
+.titulo-destaque{
+    color: var(--color-terceario)
+}
+
+.presentacion{
+    display: flex;
+    align-items: center;
+    padding: 3% 10%;
+    justify-content: space-between;
+    gap: 82px;
+}
+
+.presentacion_contenido{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    /* width: 615px; */
+    width: 50%;
+
+}
+
+.presentacion_contenido_titulo{
+    font-family: "Krona One", sans-serif;
+    /* font-size: 36px; */
+    font-size: 2.2rem;
+}
+.presentacion_contenido_texto{
+    /* font-size: 24px; */
+    font-size: 24px;
+    font-family: "Montserrat", sans-serif;
+}
+.presentacion_enlaces{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;/* alinear de forma vertical */
+    align-items: center;/* centar */
+    gap:32px; /* espacio entre botones */
+}
+.presentacion_enlaces_link{
+    /* width: 378px; */
+    width: 50%;
+    /* background-color: #22D4FD; */
+    text-align: center;
+    padding: 21.5px 0;
+    border-radius: 8px;
+    font-family: "Montserrat", sans-serif;
+    /* font-size: 24px; */
+    font-size: 1.5rem;
+    font-weight: 600;
+    text-decoration: none;
+    color: #f6f6f6;
+    border: 2px solid #22D4FD;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+.presentacion_enlaces_subtitulos{
+    font-family: 'Krona One', sans-serif;
+    /* font-size: 24px; */
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+ .presentacion_enlaces_link:hover{/*cambia el color del boton cuando se pasa el mouse encima */
+    background-color: #272727;
+}
+
+.presentacion_imagen{
+ width: 50%;   
+}
+
+.footer{
+    background-color: #22D4FD;
+    padding: 24px;
+    color: #000000;
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+    /* font-size: 24px; */
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+@media (max-width:1200px){
+    .header{
+        padding: 10%;
+    }
+
+    .header_menu{
+        justify-content: center;
+    }
+    .presentacion{
+        flex-direction: column-reverse;
+        padding: 5%;
+    }
+    .presentacion_contenido{
+        width: auto; /*se adapta al elemento padre */
+    }
+}
