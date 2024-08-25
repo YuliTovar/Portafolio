@@ -1,0 +1,93 @@
+Github
+
+reade.md--> archivo de instrucciones del proyecto
+
+Consola
+1. Iniciar sesion
+->git config --global user.name "YuliTovar"
+->git config --global user.email yptt.1999@gmail.com
+
+2.Verificar las configuraciones anteriores
+->git config--list
+
+3.En qué carpeta estamos
+->pwd
+
+4. Muestra las carpetas en mi computadora
+->ls
+
+5.ChangeDirectory(CD)
+
+6. Descargar archivo dede github online a la computadora por medio de la terminal
+->git clone #url_del_archivo
+git clone -branch new_feature <repositorio> (clonar de una rama)
+
+7. Acceder a la carpeta
+->ls
+->cd #nombrecarpeta
+
+8. historial del proyecto
+->git log
+->git log --oneline (presenta de manera resumida el historial)
+->git log -p (Si, en lugar de menos informaciones, queremos ver más, como las alteraciones del commit)
+->git log --author="user_name" (alteraciones de un autor en especifico)
+->git log --since=1.month.ago --until=1.day.ago (buscar por fecha)
+_________________________________________________________________________________
+9. Abrir archivo
+->code .
+
+10. Mirar si todo esta actualizado, actualiza los archivos 	
+->git pull
+
+11.verifica el estado del proyecto
+->git status
+
+12. Agregar archivo nuevo al repositorio de git (2 formas)
+-> git add . 
+
+13. Agregar el commit del nuevo archivo
+-> git commit -m "Agrega archivo de contacto"
+
+14. agegar commit para todo el proyecto (se agrega un punto)
+-> git commit . -m "Agrega archivo de contacto"
+
+14. Envia el archivo desde la computadora al git online
+-> git push
+
+15. Ver la alteracion de un archivo
+->git diff #nombrearchivo
+
+16. obtener una version antigua de mi archivo (restaurar un archivo)
+- git log --oneline (ver el historial del proyecto de manera resumida)
+-git restore --source #codigocommit #nombrearchivo
+__________________________________________________________________
+17. Crear ramas de un proyecto
+-> git branch (muestra las ramas de un proyecto)
+
+18. Crear rama
+-> git checkout -b desarrollo
+
+19. volver a la rama principal
+-> git switch main 
+
+20.volver a la rama 
+->git switch #nombrerama 
+
+21. Despues de hacer una modificacion al archivo, subirlo y commit (mirar como se hace: paso 11, 12, 13. El push cambia porque es una rama:)
+->git push origin #nombrerama
+________________________________________________________________________
+Juntar ramas
+22. git log --oneline (ver el historial para ver que se va a combinar)
+23. volver a la rama principal
+-> git switch main 
+24. despues combinar con:
+->git merge #nombrerama
+
+25. volver a cargar con push
+-> git push origin main
+ 
+
+
+
+
+
